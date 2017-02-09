@@ -1,0 +1,59 @@
+@charset "utf-8";
+.about-banner{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/about-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+.about-us{
+	padding: 60px 0 100px;
+	background: #f5f5f5;
+}
+.about-title{
+	text-align: center;
+    background: url(../img/aboutcompany.png) no-repeat center bottom;
+    padding-bottom: 4px;
+}
+.about-title h4{
+	font-size: 18px;
+    color: #4b4b4b;
+}
+.compare{
+	font-size: 14px;
+    color: #4a4a4a;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.compare:before{
+	content: "";
+	position: absolute;
+	left: 360px;
+    top: 32px;
+    width: 40px;
+    height: 10px;
+    background: url(../img/heng.png) no-repeat center center;
+}
+.compare:after{
+	content: "";
+	position: absolute;
+	right: 360px;
+    top: 32px;
+    width: 40px;
+    height: 10px;
+    background: url(../img/heng.png) no-repeat center center;
+}
+.about-content{
+    text-align: center;
+    font-size: 14px;
+    color: #4c4c4c;
+    padding: 70px 60px 0;
+}
+
+
+.mb30{
+	margin-bottom: 30px;
+}
+

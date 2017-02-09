@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta content="" name="author">
+		<title>北京装装信息技术有限公司</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/message-issue.css"/>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<div class="header">
+				<div class="container clear">
+					<!--logo开始-->
+					<a class="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+					<!--搜索框-->
+					<div class="search-wrapper">
+		                <div class="input-holder">
+		                    <input type="text" class="search-input" placeholder="搜明星、话题、服务" />
+		                    <button class="search-icons" onclick="searchToggle(this, event);"><span class="fa fa-search"></span></button>
+		                </div>
+		                <span class="close fa fa-close" onclick="searchToggle(this, event);"></span>
+		            </div>
+					<!--搜索、发布、登录-->
+					<ul class="nav-right">
+						<li>
+							<a class="issue anchor" href="message-issue.html">发布</a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="login anchor" href="javascript:;">
+								<div class="avatar">
+									<img src="img/figure.png"/>
+								</div>
+							</a>
+							<div class="underline"></div>
+							<!--登录选项框-->
+							<div class="login-box">
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<span class="fa fa-qq fc60c5ff"></span>
+											QQ登录
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="fa fa-weixin fc88ef9e"></span>
+											微信登录
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="fa fa-weibo fcff7171"></span>
+											微博登录
+										</a>
+									</li>
+									<li>
+										<a id="phone-login" href="javascript:;">
+											手机号登录
+										</a>
+									</li>
+									<li>
+										<a href="register.html">
+											注册
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!--已登录弹窗-->
+							<div class="login-box-has">
+								<ul>
+									<li>
+										<a href="javascript:;">
+											我的消息 <span>(0)</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											我的订单 <span>(0)</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											我的心愿单 <span>(0)</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											账号设置
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											退出
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					
+					
+					<!--导航栏-->
+					<ul class="navbar clear">
+						<li>
+							<a class="anchor" href="javascript:;">资源分类 <i class="fa fa-angle-down"></i></a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="anchor" href="ranklist.html">热门排行</a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="anchor" href="about-us.html">关于我们</a>
+							<div class="underline"></div>
+						</li>
+					</ul>
+					<!--资源分类框-->
+					<div class="box">
+						<ul>
+							<li>
+								<a class="anchor" href="character-list.html">
+									<img src="img/figure.png" alt="" />
+									<div class="img-shadow">明星名人</div>
+								</a>
+							</li>
+							<li>
+								<a class="anchor" href="item-list.html">
+									<img src="img/figure.png" alt="" />
+									<div class="img-shadow">奢豪物品</div>
+								</a>
+							</li>
+							<li>
+								<a class="anchor" href="site-list.html">
+									<img src="img/figure.png" alt="" />
+									<div class="img-shadow">豪华场地</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+		<section class="personal-center">
+			<div class="container clear">
+				<div class="access-path">
+					<a class="path-home" href="javascript:;"></a>
+					<span>&gt</span>
+					<a class="path-rest" href="javascript:;">个人中心 <span class="f14 fw500">Category list page</span></a>
+				</div>
+				<div class="aside">
+					<div class="center-head">
+						<p class="f18 pt10">个人中心</p>
+						<p>PERSONAL CENTER</p>
+					</div>
+					<div class="aside-profile">
+						<a class="head-portrait" href="javascript:;">
+							<img src="img/figure.png" alt="" />
+						</a>
+						<p class="person-name">-- 木波鱼 --</p>
+						<span>设计师</span>
+					</div>
+					<ul class="step-list">
+						<li>
+							<a href="my-order.html">
+								<span>我的订单</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-wish-list.html">
+								<span>我的心愿单</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-release.html">
+								<span>我的发布</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-message.html">
+								<span>我的消息</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-comment.html">
+								<span>我的评论</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="personal-center.html">
+								<span>修改个人资料</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li class="active">
+							<a href="my-complaint.html">
+								<span>我的投诉</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="online-service.html">
+								<span>在线客服</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="issue-box">
+					
+					<!--我的投诉-->
+					<div class="issue-step">
+						<div class="order-title">
+							我的投诉
+						</div>
+						<div class="be-released">
+							<div class="anchor">
+								<span>您尚未投诉任何内容</span>
+								<p><a class="complain-btn" href="javascript:;">我要投诉</a></p>
+							</div>
+						</div>
+						<div class="complain-content">
+							<div class="complain-title">
+								<span class="fcff4d00"><i class="fa fa-circle"></i> 我要</span>
+								<span>投诉</span>
+							</div>
+							<form action="" method="post">
+								<div class="complain-item">
+									<label class="form-title" for="">投诉主题</label>
+									<input class="fo-input" type="text" />
+									<span>请输入您要投诉的主题</span>
+								</div>
+								<div class="complain-item">
+									<label class="form-title" for="">投诉项目</label>
+									<input class="fo-input" type="text" />
+									<span>请输入您要投诉的项目</span>
+								</div>
+								<div class="complain-item">
+									<label class="form-title" for="">投诉类型</label>
+									<div>
+										<select style="display: none;">
+											<option>请选择</option>
+											<option value="1">测试1</option>
+											<option value="2">测试2</option>
+											<option value="3">测试3</option>
+											<option value="4">测试4</option>
+										</select>
+										<div class="complaints-type-box">
+											<span>请选择</span>
+											<i class="fa fa-sort-down type-icon"></i>
+										</div>
+										<ul class="select-list">
+											<li>请选择</li>
+											<li>1</li>
+											<li>2</li>
+										</ul>
+									</div>
+								</div>
+								<div class="complain-item" style="height: auto;">
+									<label class="form-title" for="">投诉内容</label>
+									<textarea class="fo-textarea w480" name="" rows="" cols="" placeholder="请详细输入您需要投诉的内容以及遇到的问题，方便我们尽快解决。"></textarea>
+								</div>
+								<div class="complain-item">
+									<input class="complain-submit" type="submit" value="提交"/>
+								</div>
+							</form>
+						</div>
+						<div class="order-fun">
+							<p class="refer-detail">
+								<i class="fa fa-phone"></i>
+								<span>客服电话：400-889-9646 08:00-22:30(周一至周日)</span>
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!--footer开始-->
+		<footer>
+			<div class="footer">
+				<div class="blur"></div>
+				<div class="foot-shadow"></div>
+				<h1 class="foot-logo">
+					<a href="index.html"><img src="img/logo.png" alt="" /></a>
+				</h1>
+				<ul class="foot-nav clear">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="character-list.html">资源分类</a></li>
+					<li><a href="ranklist.html">热门排行</a></li>
+					<li><a href="about-us.html">关于我们</a></li>
+					<li><a href="help.html">帮助</a></li>
+				</ul>
+				<div class="foot-mes">
+					<p>电话   010-85809983</p>
+					<p>地址   北京市朝阳区北苑东路铁建广场E座1410</p>
+					<p>zhuang © 2015 LOVINGLY MADE IN BEIJING 京ICP备16011529号-1</p>
+					<p>北京装装信息技术有限公司</p>
+				</div>
+			</div>
+		</footer>
+		<!--登录弹窗-->
+		<div class="shadow">
+			<div class="login-popup">
+				<a class="login-close" href="javascript:;"><i class="fa fa-close"></i></a>
+				<h2>欢迎登录装装</h2>
+				<form action="" method="post">
+					<p class="item item-form">
+						<input type="text" placeholder="手机号" />
+					</p>
+					<p class="item item-form">
+						<input type="password" name="" id="" value="" placeholder="密码" />
+					</p>
+					<p class="clear">
+						<a class="fr fcff4d00" href="javascript:;">忘记密码？</a>
+						<label class="checkbox"><i class="fa fa-check"></i></label>
+						<input type="checkbox" name="" id="remember-pwd" value="" checked="checked" hidden />
+						<label class="remember-pwd" for="">记住密码</label>
+					</p>
+					<p class="item">
+						<a class="login-btn" href="javascript:;">登录</a>
+					</p>
+					<p class="textcenter fcc8c8c8">没有账号？现在去<a class="fcff4d00" href="javascript:;">注册</a></p>
+				</form>
+				<div class="fast-login">快速登录</div>
+				<div class="third-party-login">
+					<a class="login-qq" href="javascript:;"><i class="fa fa-qq"></i></a>
+					<a class="login-weixin" href="javascript:;"><i class="fa fa-weixin"></i></a>
+					<a class="login-weibo" href="javascript:;"><i class="fa fa-weibo"></i></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script src="js/jquery.bxslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.tag-editor.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+
+
+

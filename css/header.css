@@ -1,0 +1,594 @@
+/*导航栏开始*/
+.header{
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0,0,0,.7);
+}
+.container{
+    width: 992px;
+    margin: 0 auto;
+    position: relative;
+}
+/*logo图标*/
+.logo{
+    float: left;
+    width: 120px;
+    height: 64px;
+    margin-top: 18px;
+}
+.logo img{
+    max-width: 100%;
+    display: block;
+    border: 0;
+}
+/*搜索、发布、登录按钮*/
+.nav-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav-right li{
+    display: inline-block;
+    position: relative;
+}
+.nav-right .anchor{
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 70px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav-right li:hover .underline{
+    height: 6px;
+}
+.nav-right li:hover .anchor,.nav-right li.active .anchor{
+    color: #fdb700;
+}
+
+.nav-right li.active .underline{
+    height: 6px;
+}
+
+/*登录选项框*/
+.login-box{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+    display: none;
+    width: 110px;
+    -webkit-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    -moz-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    -ms-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    z-index: 1;
+}
+.login-box li{
+    height: 40px;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border-top: 1px solid #ebebeb;
+}
+.login-box a{
+    display: block;
+}
+.login-box a:hover{
+    color: #fdb700;
+}
+.login-box li:last-child a{
+    color: #ff4545;
+}
+
+/*已登录弹框选项*/
+.login-box-has{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: #fff;
+    border-radius: 0 0 6px 6px;
+    display: none;
+    width: 110px;
+    -webkit-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    -moz-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    -ms-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    z-index: 2;
+}
+.login-box-has li{
+    height: 40px;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border-top: 1px solid #ebebeb;
+}
+.login-box-has a{
+    display: block;
+}
+.login-box-has a:hover{
+    color: #fdb700;
+}
+.login-box-has li:last-child a{
+    color: #ff4545;
+}
+
+/*导航*/
+.navbar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 56px;
+    position: relative;
+    float: left;
+}
+.navbar li{
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar .anchor{
+    display: block;
+    color: #fff;
+}
+.navbar li:hover .underline{
+    height: 6px;
+}
+.navbar li:hover a{
+    color: #fdb700;
+}
+.navbar li.active a{
+    color: #fdb700;
+}
+.navbar li.active .underline{
+    height: 6px;
+}
+/*导航栏下划线*/
+.underline{
+    width: 80%;
+    height: 0;
+    background-color: #fdb700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10%; 
+}
+.underline{
+    -webkit-transition: height 0.8s ease;
+    -moz-transition: height 0.8s ease;
+    -ms-transition: height 0.8s ease;
+    -o-transition: height 0.8s ease;
+    transition: height 0.8s ease;
+}
+
+/*资源分类框*/
+.box{
+    width: 380px;
+    height: auto;
+    border-radius: 0 0 6px 6px;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+    left: 186px;
+    padding: 5px 10px 10px;
+    box-sizing: border-box;
+    display: none;
+    -webkit-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    -moz-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    -ms-box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+    box-shadow: -3px 0 10px #323232,3px 0 10px #323232,0 3px 10px #323232;
+}
+.box li{
+    list-style: none;
+    float: left;
+    width: 116px;
+    height: 116px;
+    margin-right:5px;
+    margin-top: 5px; 
+}
+.box li:nth-child(3n){
+    margin-right: 0;
+}
+.box .anchor{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box img{
+    max-width: 100%;
+    border: 0;
+    display: block;
+    border-radius: 4px;
+}
+.img-shadow{
+    position: absolute;
+    top: 116px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    line-height: 116px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    -webkit-transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -ms-transition:all 0.2s;
+    -o-transition:all 0.2s;
+    transition:all 0.2s;
+}
+/*banner图*/
+.banner{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.banner-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+/*搜索框*/
+.search-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 50px;
+    margin-top: -25px;
+    line-height: 44px;
+    margin-left: -200px;
+    border: 3px solid #ebebeb;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 200px;
+}
+.no-index{
+    left: 680px;
+}
+.drop-menu-default{
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ebebeb;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.drop-menu-default:hover{
+    color: #ff4d00;
+}
+.drop-menu-default i{
+    margin-left: 8px;
+}
+.drop-menu{
+    position: absolute;
+    width: 100%;
+    border: 3px solid #ebebeb;
+    top: 66px;
+    left: -3px;
+    background: #fff;
+    display: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.drop-menu li{
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.drop-menu .cor{
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    overflow: hidden;
+    top: -40px;
+    margin-left: -160px;
+}
+.drop-menu .anchor{
+    display: block;
+    color: #333;
+}
+
+.drop-menu .anchor:hover,.drop-menu li.current .anchor:hover{
+    background: #ff4d00;
+    color: #fff;
+}
+.drop-menu li.current .anchor{
+    color: #ff4d00;
+}
+
+.search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    text-align: center;
+    background: #ff4d00;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0 35px 35px 0;
+}
+.input-box{
+    display: inline-block;
+    position: relative;
+}
+
+
+.search-icon{
+    position: absolute;
+    color: #ebebeb;
+    font-size: 14px;
+    top: 14px;
+    left: 10px;
+}
+.search-box input{
+    width: 100%;
+    padding-left: 34px;
+    box-sizing: border-box;
+    color: #333;
+    height: 44px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+/*简单搜索*/
+.search-wrapper {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:83.3%;
+}
+.search-wrapper.active {
+    left: 69.3%;
+}
+
+.search-wrapper .input-holder {
+    overflow: hidden;
+    height: 50px;
+    background: rgba(255,255,255,0);
+    border-radius: 6px;
+    position: relative;
+    width: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder {
+    border-radius: 8px;
+    width: 250px;
+    background: transparent;
+    border: 1px solid #fff;
+    -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+
+.search-wrapper .input-holder .search-input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 70px 0 20px;
+    opacity: 0;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Open Sans", Arial, Verdana;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    -webkit-transform: translate(0, 60px);
+    -moz-transform: translate(0, 60px);
+    transform: translate(0, 60px);
+    -webkit-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+}
+
+.search-wrapper .input-holder .search-icons {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    padding: 0px;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    float: right;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder .search-icons {
+    width: 50px;
+    height: 50px;
+    margin-top: -14px;
+    margin-right: 11px;
+    border-radius: 30px;
+}
+.search-wrapper .input-holder .search-icons span {
+    color: #fff;
+    top: -2px;
+    left: -3px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    -webkit-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+    -moz-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+    transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+
+}
+.search-wrapper.active .input-holder .search-icons span {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    top: 12px;
+    left: 16px;
+}
+
+.search-wrapper .close {
+    position: absolute;
+    top: 14px;
+    z-index: 1;
+    right: 16px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+    width: 24px;
+    color: transparent;
+    height: 24px;
+    cursor: pointer;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    -moz-transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.search-wrapper.active .close {
+    right: -30px;
+    top: 14px;
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/*登录成功后登录变为头像*/
+.avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.avatar img{
+    max-width: 100%;
+    display: block;
+}
+
+/*分页样式*/
+.pagination {
+    margin: 20px 0
+}
+
+.pagination>a,
+.pagination>span {
+    float: left;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left-width: 0
+}
+
+.pagination>.current{
+    color: #007fff;
+}
+
+.pagination>a:hover,
+.pagination>a:focus {
+    background-color: #f5f5f5
+}
+
+.pagination>a:first-child,
+.pagination>span:first-child {
+    border-left-width: 1px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-topleft: 4px
+}
+
+.pagination>a:last-child,
+.pagination>span:last-child {
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px
+}
+
+.textoverflow{
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,407 @@
+@charset "utf-8";
+/*支付方式页面开始*/
+.payment{
+    padding: 130px 0 70px;
+    background: #f5f5f5;
+}
+.pay-mes{
+    padding: 0 36px;
+    margin-bottom: 40px;
+    color: #4b4b4b;
+    font-size: 14px;
+}
+.book-details{
+    color: #ff4d00;
+    margin-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+	/*预约详情弹窗开始*/
+.book-pop{
+    position: absolute;
+    top: 40px;
+    left: 390px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    z-index: 3;
+    -webkit-filter: drop-shadow(3px 3px 3px #bababa);
+	-moz-filter: drop-shadow(3px 3px 3px #bababa);
+	-ms-filter: drop-shadow(3px 3px 3px #bababa);
+	filter: drop-shadow(3px 3px 3px #bababa);
+	display: none;
+}
+.book-pop.flag{
+	display: block;
+}
+.core{
+    position: absolute;
+    top: -21px;
+    left: 26px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+.subscribe-item {
+    height: 44px;
+    position: relative;
+    display: inline-block;
+    color: #9d9d9d;
+    font-size: 14px;
+    border: 1px solid #ececec;
+    border-radius: 50px;
+    padding: 0 100px 0 20px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.subscribe-item-con {
+    line-height: 44px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.subscribe-item-price {
+    position: absolute;
+    right: 20px;
+    top: 2px;
+}
+.subscribe-item-time {
+    position: absolute;
+    right: 20px;
+    bottom: 2px;
+}
+	/*预约详情弹窗结束*/
+.payment-box{
+    position: relative;
+    padding: 5px;
+}
+.trim{
+	width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50px;
+    z-index: 0;
+}
+.pay-card{
+	position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 40px 30px;
+}
+.pay-item{
+    padding: 0 30px 40px;
+    border-bottom: 1px solid #dadada;
+}
+.pay-item .anchor{
+	display: inline-block;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #aeaeae;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #4b4b4b;
+}
+.pay-item .anchor.active{
+	border: 1px solid #ff4d00;
+	background: #FF4D00;
+	color: #fff;
+}
+.pay-item-content{
+	padding: 30px 35px 0;
+    border-bottom: 1px solid #dadada;
+    display: none;
+}
+.pay-radio{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 75px;
+}
+.radio-box{
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    vertical-align: -5px;
+    background: #fbfbfb;
+}
+.radio-box:before{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 100%;
+    background: #ff4d00;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+input[type='radio']:checked + label.radio-box{
+	border-color: #ff4d00;
+	background: #fff;
+}
+input[type='radio']:checked + label.radio-box:before{
+	opacity: 1;
+	visibility: visible;
+}
+.radio-box:after{
+    content: '储蓄卡';
+    position: absolute;
+    left: 25px;
+    width: 50px;
+    top: -1px;
+}
+.pay-radio:nth-child(2) .radio-box:after{
+    content: '信用卡';
+}
+.card-bag>li{
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+.card-bag>li>a{
+    display: block;
+    border: 1px solid #bababa;
+}
+.card-bag>li>a:hover,.card-bag>li.active>a{
+	border-color: #ff4d00;
+}
+.card-bag>li>a>img{
+	vertical-align: middle;
+}
+.go-pay{
+	padding: 20px 35px 0;
+}
+.go-pay a{
+	display: block;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #ff4d00;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.go-pay a:hover{
+	opacity: 0.7;
+}
+/*支付方式页面结束*/
+/*微信支付页面开始*/
+.weixin-logo{
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+.qr-code{
+    padding: 40px 0 30px;
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.qr-code img{
+	max-width: 100%;
+	width: 100%;
+	display: block;
+}
+.qr-tip{
+    color: #4b4b4b;
+    font-size: 16px;
+    padding: 20px 50px;
+    display: inline-block;
+    border: 1px solid #ff4d00;
+}
+.qr-price{
+    color: #ff4d00;
+    font-size: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid #dadada;
+}
+/*微信支付页面结束*/
+/*付款成功弹窗开始*/
+.subscribe-shadow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+		/*付款成功加上这个class .pay-success*/
+.subscribe-shadow.pay-success{
+	display: block;
+}
+.subscribe{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding: 60px;
+    width: 460px;
+}
+.subscribe-close{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: #ff4d00;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+}
+.subscribe-close span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url(../img/close.png) no-repeat center center;
+    background-size: cover;
+}
+.subscribe-close:hover{
+	opacity: 0.7;
+}
+.subscribe-flow{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.flow-bg{
+	width: 320px;
+    height: 2px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+}
+.flow-line{
+	width: 166px;
+    height: 2px;
+    background: #ff4d00;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+}
+.subscribe-flow span{
+	position: absolute;
+    border-radius: 100%;
+    text-align: center;
+    background: #f5f5f5;
+    color: #9d9d9d;
+    font-size: 14px;
+}
+.subscribe-flow span:nth-child(3){
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    left: 0;
+    top: 5px;
+    background: #ff4d00;
+    color: #fff;
+}
+.subscribe-flow span:nth-child(4){
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    left: 90px;
+    top: 0;
+    background: #ff4d00;
+    color: #fff;
+}
+.subscribe-flow span:nth-child(5){
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    left: 190px;
+    top: 5px;
+}
+.subscribe-flow span:nth-child(6){
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    left: 280px;
+    top: 5px;
+}
+.subscribe-line{
+    margin: 25px 0;
+    height: 1px;
+    width: 100%;
+    background: url(../img/line.png) no-repeat center center;
+    background-size: cover;
+    padding: 0 30px;
+    margin-left: -30px;
+}
+.paid-tip{
+	width: 240px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    background: #f5f5f5;
+    font-size: 24px;
+    color: #4b4b4b;
+    margin-bottom: 30px;
+}
+/*付款成功弹窗结束*/
+
+.f24{
+	font-size: 24px;
+}
+.f14{
+	font-size: 14px;
+}
+.ptb10{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pb30{
+	padding-bottom: 30px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.porelative{
+	position: relative;
+}
+.textcenter{
+	text-align: center;
+}

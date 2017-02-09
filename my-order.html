@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta content="" name="author">
+		<title>北京装装信息技术有限公司</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/message-issue.css"/>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<div class="header">
+				<div class="container clear">
+					<!--logo开始-->
+					<a class="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+					<!--搜索框-->
+					<div class="search-wrapper">
+		                <div class="input-holder">
+		                    <input type="text" class="search-input" placeholder="搜明星、话题、服务" />
+		                    <button class="search-icons" onclick="searchToggle(this, event);"><span class="fa fa-search"></span></button>
+		                </div>
+		                <span class="close fa fa-close" onclick="searchToggle(this, event);"></span>
+		            </div>
+					<!--搜索、发布、登录-->
+					<ul class="nav-right">
+						<li>
+							<a class="issue anchor" href="message-issue.html">发布</a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="login anchor" href="javascript:;">
+								<div class="avatar">
+									<img src="img/figure.png"/>
+								</div>
+							</a>
+							<div class="underline"></div>
+							<!--登录选项框-->
+							<div class="login-box">
+								<ul>
+									<li>
+										<a href="javascript:;">
+											<span class="fa fa-qq fc60c5ff"></span>
+											QQ登录
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="fa fa-weixin fc88ef9e"></span>
+											微信登录
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="fa fa-weibo fcff7171"></span>
+											微博登录
+										</a>
+									</li>
+									<li>
+										<a id="phone-login" href="javascript:;">
+											手机号登录
+										</a>
+									</li>
+									<li>
+										<a href="register.html">
+											注册
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!--已登录弹窗-->
+							<div class="login-box-has">
+								<ul>
+									<li>
+										<a href="javascript:;">
+											我的消息 <span>(0)</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											我的订单 <span>(0)</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											我的心愿单 <span>(0)</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											账号设置
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											退出
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<!--导航栏-->
+					<ul class="navbar clear">
+						<li>
+							<a class="anchor" href="javascript:;">资源分类 <i class="fa fa-angle-down"></i></a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="anchor" href="ranklist.html">热门排行</a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="anchor" href="about-us.html">关于我们</a>
+							<div class="underline"></div>
+						</li>
+					</ul>
+					<!--资源分类框-->
+					<div class="box">
+						<ul>
+							<li>
+								<a class="anchor" href="character-list.html">
+									<img src="img/figure.png" alt="" />
+									<div class="img-shadow">明星名人</div>
+								</a>
+							</li>
+							<li>
+								<a class="anchor" href="item-list.html">
+									<img src="img/figure.png" alt="" />
+									<div class="img-shadow">奢豪物品</div>
+								</a>
+							</li>
+							<li>
+								<a class="anchor" href="site-list.html">
+									<img src="img/figure.png" alt="" />
+									<div class="img-shadow">豪华场地</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="personal-center">
+			<div class="container clear">
+				<div class="access-path">
+					<a class="path-home" href="javascript:;"></a>
+					<span>&gt</span>
+					<a class="path-rest" href="javascript:;">个人中心 <span class="f14 fw500">Category list page</span></a>
+				</div>
+				<div class="aside">
+					<div class="center-head">
+						<p class="f18 pt10">个人中心</p>
+						<p>PERSONAL CENTER</p>
+					</div>
+					<div class="aside-profile">
+						<a class="head-portrait" href="javascript:;">
+							<img src="img/figure.png" alt="" />
+						</a>
+						<p class="person-name">-- 木波鱼 --</p>
+						<span>设计师</span>
+					</div>
+					<ul class="step-list">
+						<li class="active">
+							<a href="my-order.html">
+								<span>我的订单</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-wish-list.html">
+								<span>我的心愿单</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-release.html">
+								<span>我的发布</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-message.html">
+								<span>我的消息</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-comment.html">
+								<span>我的评论</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="personal-center.html">
+								<span>修改个人资料</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="my-complaint.html">
+								<span>我的投诉</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+						<li>
+							<a href="online-service.html">
+								<span>在线客服</span>
+								<i class="fa fa-sort-desc fa-rotate-270"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="issue-box">
+					<!--我的订单-->
+					<div class="issue-step">
+						<div class="order-title">我的订单</div>
+						<div class="order-card">
+							<ul class="clear">
+								<li class="active"><a href="javascript:;">全部</a></li>
+								<li><a href="javascript:;">已完成</a></li>
+								<li><a href="javascript:;">进行中</a></li>
+								<li><a href="javascript:;">未完成</a></li>
+								<li><a href="javascript:;">已取消</a></li>
+							</ul>
+							<table class="order-list" id="order-list"> 
+								<thead>
+									<tr class="order-item"> 
+								    	<th></th>
+								        <th>内容</th> 
+								        <th>时间</th> 
+								        <th>费用</th> 
+								        <th>状态</th> 
+								    </tr> 
+								</thead>
+							    <tbody>
+							    	<tr class="order-content"> 
+								    	<td class="w50">
+								    		<div class="select-box">
+								    			<label class="select-one" for=""><span class="round"></span></label>
+								    			<input type="checkbox" hidden="hidden" name="order" />
+								    		</div>
+								    	</td>
+								        <td class="w300">
+								        	<div class="order-mes">
+									        	<div class="order-img"><img src="img/figure.png" alt="" /></div>
+									        	<div class="order-detail">
+									        		<p><a href="order-details-paid.html">为你提供创意百考虑考虑了来看看了搭的形象</a></p>
+									        		<p>曹晶</p>
+									        		<p>2016.02.12</p>
+									        	</div>
+									        </div>
+								        </td> 
+								        <td class="w120"><div class="order-time">2小时</div></td> 
+								        <td class="w120"><div class="order-price">¥239</div></td> 
+								        <td>
+								        	<div class="order-state">
+								        		<span>已完成</span>
+								        		<span class="state-btn">评价</span>
+								        	</div>
+								        </td>
+								    </tr>
+								    <tr class="blind">
+								    	<td colspan="5" class="plr35">
+								    		<div class="comment-wrap">
+								    			<div class="prelative">
+								    				<span class="comment-con-title">评分：</span>
+								    				<ul class="score-box">
+								    					<li><a href="javascript:;"><span class="fa fa-star"></span></a></li>
+								    					<li><a href="javascript:;"><span class="fa fa-star"></span></a></li>
+								    					<li><a href="javascript:;"><span class="fa fa-star"></span></a></li>
+								    					<li><a href="javascript:;"><span class="fa fa-star"></span></a></li>
+								    					<li><a href="javascript:;"><span class="fa fa-star"></span></a></li>
+								    				</ul>
+								    			</div>
+								    			<div class="prelative mt20">
+								    				<span class="comment-con-title">评价：</span>
+								    				<from>
+								    					<p class="pl50">
+								    						<textarea class="comment-con" name="" rows="" cols=""></textarea>
+								    					</p>
+								    				</from>
+								    				<p class="remark">评论字数限<span class="fcff4d00">300</span>字</p>
+								    			</div>
+								    			<div class="prelative mt20">
+								    				<span class="comment-con-title">嗮图：</span>
+								    				<div class="pl50">
+								    					<div class="mb30">
+								    						<input type="file" id="choose" accept="image/*" multiple="">
+															<ul class="img-list clear"></ul>
+									    					<a class="add-image" id="upload" href="javascript:;">添加图片</a>
+									    					<span>最多可添加5张图片</span>
+									    				</div>
+									    				<p>
+									    					<a class="add-image" id="submit-evaluation" href="javascript:;">提交评价</a>
+									    					<span class="anonymous"><i class="fa fa-check"></i></span>
+									    					<span>匿名显示</span>
+									    				</p>
+								    				</div>
+								    			</div>
+								    		</div>
+								    	</td>
+								    </tr>
+								    <tr class="order-content"> 
+								    	<td class="w50">
+								    		<div class="select-box">
+								    			<label class="select-one" for=""><span class="round"></span></label>
+								    			<input type="checkbox" hidden="hidden" name="order" />
+								    		</div>
+								    	</td>
+								        <td class="w300">
+								        	<div class="order-mes">
+									        	<div class="order-img"><img src="img/figure.png" alt="" /></div>
+									        	<div class="order-detail">
+									        		<p><a href="order-details-nopay.html">为你提供创意百考虑考虑了来看看了搭的形象</a></p>
+									        		<p>曹晶</p>
+									        		<p>2016.02.12</p>
+									        	</div>
+									        </div>
+								        </td> 
+								        <td class="w120"><div class="order-time">2小时</div></td> 
+								        <td class="w120"><div class="order-price">¥239</div></td> 
+								        <td>
+								        	<div class="order-state">
+								        		<span>正在进行中</span>
+								        		<span></span>
+								        	</div>
+								        </td>
+								    </tr> 
+								    <tr class="order-content"> 
+								    	<td class="w50">
+								    		<div class="select-box">
+								    			<label class="select-one" for=""><span class="round"></span></label>
+								    			<input type="checkbox" hidden="hidden" name="order" />
+								    		</div>
+								    	</td>
+								        <td class="w300">
+								        	<div class="order-mes">
+									        	<div class="order-img"><img src="img/figure.png" alt="" /></div>
+									        	<div class="order-detail">
+									        		<p><a href="javascript:;">为你提供创意百考虑考虑了来看看了搭的形象</a></p>
+									        		<p>曹晶</p>
+									        		<p>2016.02.12</p>
+									        	</div>
+									        </div>
+								        </td> 
+								        <td class="w120"><div class="order-time">2小时</div></td> 
+								        <td class="w120"><div class="order-price">¥239</div></td> 
+								        <td>
+								        	<div class="order-state">
+								        		<span>未完成</span>
+								        		<span class="state-btn">设置提醒</span>
+								        	</div>
+								        </td>
+								    </tr> 
+								    <tr class="order-content"> 
+								    	<td class="w50">
+								    		<div class="select-box">
+								    			<label class="select-one" for=""><span class="round"></span></label>
+								    			<input type="checkbox" hidden="hidden" name="order" />
+								    		</div>
+								    	</td>
+								        <td class="w300">
+								        	<div class="order-mes">
+									        	<div class="order-img"><img src="img/figure.png" alt="" /></div>
+									        	<div class="order-detail">
+									        		<p><a href="javascript:;">为你提供创意百考虑考虑了来看看了搭的形象</a></p>
+									        		<p>曹晶</p>
+									        		<p>2016.02.12</p>
+									        	</div>
+									        </div>
+								        </td> 
+								        <td class="w120"><div class="order-time">2小时</div></td> 
+								        <td class="w120"><div class="order-price">¥239</div></td> 
+								        <td>
+								        	<div class="order-state">
+								        		<span>已取消</span>
+								        		<span class="state-btn">重新预约</span>
+								        	</div>
+								        </td>
+								    </tr> 
+							    </tbody>
+							</table> 
+							<div class="order-fun" id="order-fun">
+								<p>
+									<label class="select-all" for=""><span class="round"></span></label>
+									<span class="check-all">全选</span>
+									<input type="checkbox" hidden="hidden" />
+								</p>
+								<p class="ptb30">
+									<a class="delete-checked" href="javascript:;">删除选中项</a>
+								</p>
+								<div class="page-box">
+									<span class="current">1</span>
+									<a href="/shop/User/PersonalCenter/myissue/p/2"> 2</a>
+									<a class="pageLast" href="/shop/User/PersonalCenter/myissue/p/2">下一页</a>
+									<a class="pageNext" href="/shop/User/PersonalCenter/myissue/p/2">尾页</a>
+								</div>
+								<p class="refer-detail">
+									<i class="fa fa-phone"></i>
+									<span>客服电话：400-889-9646 08:00-22:30(周一至周日)</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--footer开始-->
+		<footer>
+			<div class="footer">
+				<div class="blur"></div>
+				<div class="foot-shadow"></div>
+				<h1 class="foot-logo">
+					<a href="index.html"><img src="img/logo.png" alt="" /></a>
+				</h1>
+				<ul class="foot-nav clear">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="character-list.html">资源分类</a></li>
+					<li><a href="ranklist.html">热门排行</a></li>
+					<li><a href="about-us.html">关于我们</a></li>
+					<li><a href="help.html">帮助</a></li>
+				</ul>
+				<div class="foot-mes">
+					<p>电话   010-85809983</p>
+					<p>地址   北京市朝阳区北苑东路铁建广场E座1410</p>
+					<p>zhuang © 2015 LOVINGLY MADE IN BEIJING 京ICP备16011529号-1</p>
+					<p>北京装装信息技术有限公司</p>
+				</div>
+			</div>
+		</footer>
+		<!--登录弹窗-->
+		<div class="shadow">
+			<div class="login-popup">
+				<a class="login-close" href="javascript:;"><i class="fa fa-close"></i></a>
+				<h2>欢迎登录装装</h2>
+				<form action="" method="post">
+					<p class="item item-form">
+						<input type="text" placeholder="手机号" />
+					</p>
+					<p class="item item-form">
+						<input type="password" name="" id="" value="" placeholder="密码" />
+					</p>
+					<p class="clear">
+						<a class="fr fcff4d00" href="javascript:;">忘记密码？</a>
+						<label class="checkbox"><i class="fa fa-check"></i></label>
+						<input type="checkbox" name="" id="remember-pwd" value="" checked="checked" hidden />
+						<label class="remember-pwd" for="">记住密码</label>
+					</p>
+					<p class="item">
+						<a class="login-btn" href="javascript:;">登录</a>
+					</p>
+					<p class="textcenter fcc8c8c8">没有账号？现在去<a class="fcff4d00" href="javascript:;">注册</a></p>
+				</form>
+				<div class="fast-login">快速登录</div>
+				<div class="third-party-login">
+					<a class="login-qq" href="javascript:;"><i class="fa fa-qq"></i></a>
+					<a class="login-weixin" href="javascript:;"><i class="fa fa-weixin"></i></a>
+					<a class="login-weibo" href="javascript:;"><i class="fa fa-weibo"></i></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script src="js/jquery.bxslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.tag-editor.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	
+	
+	<!--上传图片实现-->
+	<script type="text/javascript">
+	    var filechooser = document.getElementById("choose");
+	    //用于压缩图片的canvas
+	    var canvas = document.createElement("canvas");
+	    var ctx = canvas.getContext('2d');
+	    //瓦片canvas
+	    var tCanvas = document.createElement("canvas");
+	    var tctx = tCanvas.getContext("2d");
+	    var maxsize = 100 * 1024;
+	    $("#upload").on("click", function() {
+	        filechooser.click();
+	    })
+	    .on("touchstart", function() {
+	        $(this).addClass("touch")
+	    })
+	    .on("touchend", function() {
+	        $(this).removeClass("touch")
+	    });
+	    filechooser.onchange = function() {
+	    	if (!this.files.length) return;
+	    	var files = Array.prototype.slice.call(this.files);
+		    if (files.length > 9) {
+		        alert("最多同时只可上传9张图片");
+		        return;
+		    }
+	    	files.forEach(function(file, i) {
+		        if (!/\/(?:jpeg|png|gif)/i.test(file.type)) return;
+		        var reader = new FileReader();
+		        var li = document.createElement("li");
+		    	//获取图片大小
+		        var size = file.size / 1024 > 1024 ? (~~(10 * file.size / 1024 / 1024)) / 10 + "MB" : ~~(file.size / 1024) + "KB";
+		        li.innerHTML = '<div class="progress"><span></span></div><div class="size">' + size + '</div>';
+		        $(".img-list").append($(li));
+		        reader.onload = function() {
+			        var result = this.result;
+			        var img = new Image();
+			        img.src = result;
+			        $(li).css("background-image", "url(" + result + ")");
+			        //如果图片大小小于100kb，则直接上传
+			        if (result.length <= maxsize) {
+			            img = null;
+			            upload(result, file.type, $(li));
+			            return;
+			        }
+					//图片加载完毕之后进行压缩，然后上传
+			        if (img.complete) {
+			            callback();
+			        } else {
+			            img.onload = callback;
+			        }
+			        function callback() {
+			            var data = compress(img);
+			            upload(data, file.type, $(li));
+			            img = null;
+			        }
+		        };
+	        	reader.readAsDataURL(file);
+	    	})
+	    };
+	    //使用canvas对大图片进行压缩
+	    function compress(img) {
+		    var initSize = img.src.length;
+		    var width = img.width;
+		    var height = img.height;
+		    //如果图片大于四百万像素，计算压缩比并将大小压至400万以下
+		    var ratio;
+		    if ((ratio = width * height / 4000000) > 1) {
+		        ratio = Math.sqrt(ratio);
+		        width /= ratio;
+		        height /= ratio;
+		    } else {
+		        ratio = 1;
+		    }
+		    canvas.width = width;
+		    canvas.height = height;
+			//铺底色
+		    ctx.fillStyle = "#fff";
+		    ctx.fillRect(0, 0, canvas.width, canvas.height);
+		    //如果图片像素大于100万则使用瓦片绘制
+		    var count;
+		    if ((count = width * height / 1000000) > 1) {
+		        count = ~~(Math.sqrt(count) + 1); //计算要分成多少块瓦片
+				//计算每块瓦片的宽和高
+		        var nw = ~~(width / count);
+		        var nh = ~~(height / count);
+		        tCanvas.width = nw;
+		        tCanvas.height = nh;
+		        for (var i = 0; i < count; i++) {
+			        for (var j = 0; j < count; j++) {
+			          tctx.drawImage(img, i * nw * ratio, j * nh * ratio, nw * ratio, nh * ratio, 0, 0, nw, nh);
+			          ctx.drawImage(tCanvas, i * nw, j * nh, nw, nh);
+			        }
+		        }
+		    } else {
+		        ctx.drawImage(img, 0, 0, width, height);
+		    }
+		    //进行最小压缩
+		    var ndata = canvas.toDataURL('image/jpeg', 0.1);
+		    console.log('压缩前：' + initSize);
+		    console.log('压缩后：' + ndata.length);
+		    console.log('压缩率：' + ~~(100 * (initSize - ndata.length) / initSize) + "%");
+		    tCanvas.width = tCanvas.height = canvas.width = canvas.height = 0;
+		    return ndata;
+	    }
+	    //图片上传，将base64的图片转成二进制对象，塞进formdata上传
+	    function upload(basestr, type, $li) {
+		    var text = window.atob(basestr.split(",")[1]);
+		    var buffer = new Uint8Array(text.length);
+		    var pecent = 0, loop = null;
+		    for (var i = 0; i < text.length; i++) {
+		        buffer[i] = text.charCodeAt(i);
+		    }
+		    var blob = getBlob([buffer], type);
+		    var xhr = new XMLHttpRequest();
+		    var formdata = getFormData();
+		    formdata.append('imagefile', blob);
+		    xhr.open('post', '/cupload');
+		    xhr.onreadystatechange = function() {
+		        if (xhr.readyState == 4 && xhr.status == 200) {
+			        var jsonData = JSON.parse(xhr.responseText);
+			        var imagedata = jsonData[0] || {};
+			        var text = imagedata.path ? '上传成功' : '上传失败';
+			        console.log(text + '：' + imagedata.path);
+			        clearInterval(loop);
+			        //当收到该消息时上传完毕
+			        $li.find(".progress span").animate({'width': "100%"}, pecent < 95 ? 200 : 0, function() {
+			            $(this).html(text);
+			        });
+			        if (!imagedata.path) return;
+			        $(".pic-list").append('<a href="' + imagedata.path + '">' + imagedata.name + '（' + imagedata.size + '）<img src="' + imagedata.path + '" /></a>');
+		        }
+		    };
+		    //数据发送进度，前50%展示该进度
+		    xhr.upload.addEventListener('progress', function(e) {
+		        if (loop) return;
+		        pecent = ~~(100 * e.loaded / e.total) / 2;
+		        $li.find(".progress span").css('width', pecent + "%");
+			    if (pecent == 50) {
+			        mockProgress();
+			    }
+		    }, false);
+		    //数据后50%用模拟进度
+		    function mockProgress() {
+		        if (loop) return;
+		        loop = setInterval(function() {
+		        	pecent++;
+			        $li.find(".progress span").css('width', pecent + "%");
+			        if (pecent == 99) {
+			          clearInterval(loop);
+			        }
+		        }, 100)
+		    }
+		    xhr.send(formdata);
+	    }
+	    /**
+	    	* 获取blob对象的兼容性写法
+	    	* @param buffer
+	    	* @param format
+	    	* @returns {*}
+    	*/
+	    function getBlob(buffer, format) {
+		    try {
+		        return new Blob(buffer, {type: format});
+		    } catch (e) {
+		        var bb = new (window.BlobBuilder || window.WebKitBlobBuilder || window.MSBlobBuilder);
+		        buffer.forEach(function(buf) {
+		        	bb.append(buf);
+		        });
+		        return bb.getBlob(format);
+		    }
+	    }
+	    /**
+	    * 获取formdata
+	    */
+	    function getFormData() {
+		    var isNeedShim = ~navigator.userAgent.indexOf('Android')
+		        && ~navigator.vendor.indexOf('Google')
+		        && !~navigator.userAgent.indexOf('Chrome')
+		        && navigator.userAgent.match(/AppleWebKit\/(\d+)/).pop() <= 534;
+		    return isNeedShim ? new FormDataShim() : new FormData()
+	    }
+	    /**
+	    * formdata 补丁, 给不支持formdata上传blob的android机打补丁
+	    * @constructor
+	    */
+	    function FormDataShim() {
+		    console.warn('using formdata shim');
+		    var o = this,
+		        parts = [],
+		        boundary = Array(21).join('-') + (+new Date() * (1e16 * Math.random())).toString(36),
+		        oldSend = XMLHttpRequest.prototype.send;
+		    this.append = function(name, value, filename) {
+		        parts.push('--' + boundary + '\r\nContent-Disposition: form-data; name="' + name + '"');
+		        if (value instanceof Blob) {
+			        parts.push('; filename="' + (filename || 'blob') + '"\r\nContent-Type: ' + value.type + '\r\n\r\n');
+			        parts.push(value);
+		        }
+		        else {
+		        	parts.push('\r\n\r\n' + value);
+		        }
+		        parts.push('\r\n');
+		    };
+		    // Override XHR send()
+		    XMLHttpRequest.prototype.send = function(val) {
+		        var fr,
+		            data,
+		            oXHR = this;
+		        if (val === o) {
+			        // Append the final boundary string
+			        parts.push('--' + boundary + '--\r\n');
+			        // Create the blob
+			        data = getBlob(parts);
+			        // Set up and read the blob into an array to be sent
+			        fr = new FileReader();
+			        fr.onload = function() {
+			          oldSend.call(oXHR, fr.result);
+			        };
+			        fr.onerror = function(err) {
+			          throw err;
+			        };
+			        fr.readAsArrayBuffer(data);
+			        // Set the multipart content type and boudary
+			        this.setRequestHeader('Content-Type', 'multipart/form-data; boundary=' + boundary);
+			        XMLHttpRequest.prototype.send = oldSend;
+		        }
+		        else {
+		        	oldSend.call(this, val);
+		        }
+		    };
+	    }
+	</script>
+</html>
+
+
+
+

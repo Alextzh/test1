@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*注册页面开始*/
+.register-box{
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    background: #fff;
+    padding: 50px 250px;
+}
+.register-box h2{
+	font-size: 30px;
+    color: #ff4d00;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.item{
+	padding-bottom: 15px;
+    font-size: 14px;
+}
+.item-form input{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: 0 none;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    color: #333;
+}
+.item-authcode input{
+	height: 40px;
+    line-height: 40px;
+    width: 180px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: 0 none;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    color: #333;
+}
+.item-authcode img{
+	display: inline-block;
+    width: 105px;
+    height: 40px;
+    float: right;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.item a{
+	height: 40px;
+    display: block;
+    line-height: 40px;
+    width: 100%;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.item .send-code{
+	color: #333;
+}
+.item .send-code:hover{
+	color: #FFFFFF;
+	background: #FF4D00;
+	border-color: #ff4d00;
+}
+.item .register-btn{
+	color: #fff;
+    background: #ff5500;
+    margin-top: 10px;
+}
+.service-terms,.remember-pwd{
+	display: inline-block;
+    color: #c8c8c8;
+}
+/*注册页面结束*/
+/*服务条款页面开始*/
+.agreement{
+    padding: 150px 0 50px;
+    background: #f5f5f5;
+}
+.agree-box{
+	border-radius: 4px;
+    border: 1px solid #ececec;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+.agree-box h3{
+	text-align: center;
+    color: #4b4b4b;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.agree-box p{
+	text-indent: 2em;
+}
+/*服务条款页面结束*/
+
+.bgf5f5f5{
+	background: #f5f5f5;
+}
+.w800{
+	width: 800px;
+}
+.ptb130-70{
+	padding-top: 130px;
+	padding-bottom: 70px;
+}
